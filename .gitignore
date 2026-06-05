@@ -18,7 +18,8 @@ dist/
 .ipynb_checkpoints/
 
 # Notebook and analysis-only source files
-*.ipynb
+Appliction_Scipts_fb_streamlit.ipynb
+#*.ipynb
 *.xlsx
 
 # Generated or unused artifacts not required by Application_fb_streamlit.py
