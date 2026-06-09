@@ -138,7 +138,7 @@ def add_metrics2(data):
 
     return data
 #-----------------------------------------------------------------------------------------------------------------------------
-def give_numeric_lables(data):
+def give_numeric_labels(data):
     data['age'].replace((3.0,4.5,3.5,4.0),('30-34','45-49','35-39','40-44'),inplace=True)
     data['gender'].replace((2,1),('M','F'),inplace=True)
     data=data.drop(columns='xyz_campaign_id')

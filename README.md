@@ -14,7 +14,7 @@ The app is designed for campaign planning, not just reporting. It uses historica
 
 - compare predicted leads and sales across consumer segments
 - surface high-value demographic and interest combinations
-- estimate expected revenue from planned subcampaigns
+- estimate expected revenue from planned sub-campaigns
 - show how spend decisions can affect conversion outcomes
 
 That makes this a high-value project for stakeholders who need to make budget and targeting decisions from available consumer and market data.
@@ -33,7 +33,7 @@ Local project path:
 
 ## App Files
 
-The deployed app entrypoint is:
+The deployed app entry point is:
 
 ```text
 Application_fb_streamlit.py

@@ -99,7 +99,7 @@ class PolyDegreeElasticHypertuner:
             train_score=r2_score(poly_y_train,grid.best_estimator_.predict(poly_X_train))
             ###############
             #THIS SHOULD GET THE TRAIN SCORE AND STORE BOTH VALUES, THEN RETURN PLOT DATA AND MODEL DATA AS DICTS. 
-            # IT SHOULD ALSO RECOMEND K VERSIONS OF TOP N. TOP TRAIN, TOP TEST, TOP SUMMATION, TOP WITH WEIGHTED PARAMETERS, SUCH AS CRIPPLE the larger's contributin to overall score based on the ones this pair is compared to and visa versa
+            # IT SHOULD ALSO RECOMMEND K VERSIONS OF TOP N: TOP TRAIN, TOP TEST, TOP SUMMATION, AND TOP WITH WEIGHTED PARAMETERS, SUCH AS CRIPPLING THE LARGER CONTRIBUTION TO OVERALL SCORE BASED ON THE ONES THIS PAIR IS COMPARED TO AND VICE VERSA.
 
             balanced_score=( (test_score*self.test_score_weight+train_score*self.train_score_weight)*self.train_test_score_sum_reward_multiplier ) - ( abs(test_score-train_score)*self.train_test_score_diff_penalty_multiplier )
         
